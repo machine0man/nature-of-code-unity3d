@@ -23,29 +23,15 @@ namespace Nature
 			s_Instance = null;
 		}
 		#endregion
-
-		public static Vector3 GetCursorPosition()
-		{
-			return s_Instance.GetCursorPosition_internal();
-		}
 		private void Update()
 		{
-			SetMouseScreenPosition();
-			SetMouseWorldPosition();
+			SetMousePosition();
 		}
-		Vector3 GetCursorPosition_internal()
-		{
-			Vector3 l_pos = Input.mousePosition;
-			l_pos.z = 10f;
-			return l_pos;
-		}
-		void SetMouseScreenPosition()
+		void SetMousePosition()
 		{
 			m_mouseScreenPosition = Input.mousePosition;
-			m_mouseScreenPosition.z = 10;
-		}
-		void SetMouseWorldPosition()
-		{
+			m_mouseScreenPosition.z = 10f;
+
 			m_mouseWorldPosition = Camera.main.ScreenToWorldPoint(m_mouseScreenPosition);
 		}
 	}
