@@ -7,7 +7,7 @@ namespace Nature
 		static BoundingBox s_Instance;
 
 		[SerializeField] Vector2 m_BoundingBoxMaxVal;
-		public static Vector2 BoundingBoxMaxVal { get => s_Instance.m_BoundingBoxMaxVal; set => s_Instance.m_BoundingBoxMaxVal = value; }
+		public static Vector2 BoundingBoxMaxVal { get => s_Instance.m_BoundingBoxMaxVal;}
 
 		#region Unity Methods
 		private void Awake()

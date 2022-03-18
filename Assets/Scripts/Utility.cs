@@ -14,11 +14,7 @@ namespace Nature
 		}
 		public static Vector2 GetRandomVector2D()
 		{
-			return new Vector2
-				(
-				Random.Range(-0.5f, 0.5f),
-				Random.Range(-0.5f, 0.5f)
-				).normalized;
+			return GetRandomVector2D(-0.5f, 0.5f, -0.5f, 0.5f).normalized;
 		}
 	}
 }   

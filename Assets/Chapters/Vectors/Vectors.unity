@@ -293,6 +293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_prefabMover: {fileID: 4220614776785842559, guid: e1b87340b8b784145a485abfd373e3c8, type: 3}
+  m_prefabMisterRed: {fileID: 4220614776785842528, guid: 211259960fc68b943aec872dbfde6401, type: 3}
   m_moversCount: 100
   m_accelerationType: 0
   m_overDriveDistance: 2
